@@ -123,9 +123,10 @@ This playbook follows four phases that mirror the pilot lifecycle:
 **If you're starting a new pilot:**
 
 1. Begin with [`01-discovery/stakeholder-interview-guide.md`](01-discovery/stakeholder-interview-guide.md) to understand the problem
-2. Complete [`01-discovery/ai-readiness-scorecard.md`](01-discovery/ai-readiness-scorecard.md) to assess readiness
-3. Use [`01-discovery/bottleneck-identification.md`](01-discovery/bottleneck-identification.md) to confirm you're solving the right problem
-4. Fill out [`02-definition/pilot-scope-template.md`](02-definition/pilot-scope-template.md) completely before starting
+2. Run [`01-discovery/data-audit-checklist.md`](01-discovery/data-audit-checklist.md) to verify data readiness
+3. Complete [`01-discovery/ai-readiness-scorecard.md`](01-discovery/ai-readiness-scorecard.md) to assess organizational readiness
+4. Use [`01-discovery/bottleneck-identification.md`](01-discovery/bottleneck-identification.md) to confirm you're solving the right problem
+5. Fill out [`02-definition/pilot-scope-template.md`](02-definition/pilot-scope-template.md) completely before starting
 
 **If you're running an active pilot:**
 
@@ -158,6 +159,8 @@ pilot-playbook/
 │
 ├── README.md                          # This file
 ├── LICENSE                            # CC-BY-4.0
+├── CONTRIBUTING.md                    # How to contribute
+├── .gitignore                         # Git ignore rules
 │
 ├── 01-discovery/                      # Understand the problem
 │   ├── stakeholder-interview-guide.md # How to interview stakeholders
@@ -268,7 +271,7 @@ This work is licensed under [CC-BY-4.0](LICENSE). You are free to share and adap
 
 ## Contributing
 
-This playbook improves with use. If you have suggestions, corrections, or additions based on your experience running pilots, we welcome contributions.
+This playbook improves with use. If you have suggestions, corrections, or additions based on your experience running pilots, we welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
