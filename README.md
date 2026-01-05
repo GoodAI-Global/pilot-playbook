@@ -140,6 +140,17 @@ This playbook follows four phases that mirror the pilot lifecycle:
 2. Score using [`04-evaluation/go-no-go-decision-matrix.md`](04-evaluation/go-no-go-decision-matrix.md)
 3. Plan next steps with [`04-evaluation/scale-planning-template.md`](04-evaluation/scale-planning-template.md) or [`04-evaluation/lessons-learned-template.md`](04-evaluation/lessons-learned-template.md)
 
+**If you're building the business case:**
+
+1. Calculate ROI with [`tools/roi-calculator.md`](tools/roi-calculator.md)
+2. Evaluate build vs. buy with [`tools/vendor-evaluation-matrix.md`](tools/vendor-evaluation-matrix.md)
+
+**If you're ensuring responsible AI:**
+
+1. Complete [`governance/ai-ethics-checklist.md`](governance/ai-ethics-checklist.md) before deployment
+2. Document models with [`governance/model-card-template.md`](governance/model-card-template.md)
+3. Test for bias using [`governance/bias-testing-protocol.md`](governance/bias-testing-protocol.md)
+
 ### Learning from Examples
 
 The [`examples/`](examples/) directory contains complete worked examples:
@@ -186,6 +197,15 @@ pilot-playbook/
 │   ├── scale-planning-template.md     # Plan for scale
 │   └── lessons-learned-template.md    # Capture knowledge
 │
+├── tools/                             # Business case tools
+│   ├── roi-calculator.md              # ROI and TCO calculations
+│   └── vendor-evaluation-matrix.md    # Build vs. buy decision framework
+│
+├── governance/                        # Responsible AI governance
+│   ├── ai-ethics-checklist.md         # Pre-deployment ethics review
+│   ├── model-card-template.md         # ML model documentation standard
+│   └── bias-testing-protocol.md       # Systematic bias testing
+│
 └── examples/                          # Worked examples
     ├── manufacturing-oee-pilot.md     # Complete OEE pilot example
     ├── insurance-claims-pilot.md      # Complete claims pilot example
@@ -205,10 +225,13 @@ Use this checklist to ensure you don't skip critical steps:
 - [ ] AI readiness assessed (score >6.0)
 - [ ] Bottleneck confirmed with data
 - [ ] Data audit complete
+- [ ] ROI business case calculated
+- [ ] Build vs. buy decision made
 - [ ] Pilot scope document complete and signed
 - [ ] Success criteria defined with thresholds (MVS, Target, Stretch)
 - [ ] Kill criteria defined
 - [ ] Baseline measured and documented
+- [ ] Ethics checklist completed
 - [ ] Resources committed
 - [ ] Timeline set (max 12 weeks)
 
@@ -225,6 +248,8 @@ Use this checklist to ensure you don't skip critical steps:
 
 - [ ] Results analyzed rigorously
 - [ ] Statistical significance tested
+- [ ] Bias testing completed (if applicable)
+- [ ] Model card documented (if deploying model)
 - [ ] Go/No-Go matrix completed
 - [ ] Decision made and documented
 - [ ] Lessons learned captured
