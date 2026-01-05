@@ -270,3 +270,16 @@ Organizations that celebrate fast kills get more successful pilots. When you kil
 - **Recognize the decision-maker** for courage
 
 A killed pilot is not a failed pilot. A killed pilot is a successful application of judgment.
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`pilot-scope-template.md`](pilot-scope-template.md) | Document kill criteria | Include in scope document |
+| [`success-criteria-framework.md`](success-criteria-framework.md) | Link to success thresholds | Define alongside success criteria |
+| [`../03-execution/weekly-review-template.md`](../03-execution/weekly-review-template.md) | Monitor kill criteria | Review triggers weekly |
+| [`../03-execution/risk-register-template.md`](../03-execution/risk-register-template.md) | Link risks to kills | Risks may trigger kill criteria |
+| [`../04-evaluation/go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Kill decision process | Reference for kill meetings |
+| [`../04-evaluation/lessons-learned-template.md`](../04-evaluation/lessons-learned-template.md) | Document kill learnings | After kill decision |
