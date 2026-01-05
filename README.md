@@ -126,30 +126,28 @@ This playbook follows four phases that mirror the pilot lifecycle:
 2. Run [`01-discovery/data-audit-checklist.md`](01-discovery/data-audit-checklist.md) to verify data readiness
 3. Complete [`01-discovery/ai-readiness-scorecard.md`](01-discovery/ai-readiness-scorecard.md) to assess organizational readiness
 4. Use [`01-discovery/bottleneck-identification.md`](01-discovery/bottleneck-identification.md) to confirm you're solving the right problem
-5. Fill out [`02-definition/pilot-scope-template.md`](02-definition/pilot-scope-template.md) completely before starting
+5. Calculate business case with [`tools/roi-calculator.md`](tools/roi-calculator.md)
+6. Evaluate build vs. buy with [`tools/vendor-evaluation-matrix.md`](tools/vendor-evaluation-matrix.md)
+7. Complete ethics review with [`governance/ai-ethics-checklist.md`](governance/ai-ethics-checklist.md)
+8. Define success metrics with [`02-definition/success-criteria-framework.md`](02-definition/success-criteria-framework.md)
+9. Establish kill criteria with [`02-definition/kill-criteria-examples.md`](02-definition/kill-criteria-examples.md)
+10. Measure baseline using [`02-definition/baseline-measurement-guide.md`](02-definition/baseline-measurement-guide.md)
+11. Fill out [`02-definition/pilot-scope-template.md`](02-definition/pilot-scope-template.md) completely before starting
 
 **If you're running an active pilot:**
 
 1. Use [`03-execution/weekly-review-template.md`](03-execution/weekly-review-template.md) every week
 2. Track metrics with [`03-execution/metrics-tracking-sheet.md`](03-execution/metrics-tracking-sheet.md)
 3. Manage risks with [`03-execution/risk-register-template.md`](03-execution/risk-register-template.md)
+4. Communicate progress with [`03-execution/stakeholder-update-template.md`](03-execution/stakeholder-update-template.md)
 
 **If you're deciding on a pilot:**
 
 1. Follow [`04-evaluation/results-analysis-framework.md`](04-evaluation/results-analysis-framework.md) for rigorous analysis
-2. Score using [`04-evaluation/go-no-go-decision-matrix.md`](04-evaluation/go-no-go-decision-matrix.md)
-3. Plan next steps with [`04-evaluation/scale-planning-template.md`](04-evaluation/scale-planning-template.md) or [`04-evaluation/lessons-learned-template.md`](04-evaluation/lessons-learned-template.md)
-
-**If you're building the business case:**
-
-1. Calculate ROI with [`tools/roi-calculator.md`](tools/roi-calculator.md)
-2. Evaluate build vs. buy with [`tools/vendor-evaluation-matrix.md`](tools/vendor-evaluation-matrix.md)
-
-**If you're ensuring responsible AI:**
-
-1. Complete [`governance/ai-ethics-checklist.md`](governance/ai-ethics-checklist.md) before deployment
-2. Document models with [`governance/model-card-template.md`](governance/model-card-template.md)
-3. Test for bias using [`governance/bias-testing-protocol.md`](governance/bias-testing-protocol.md)
+2. Complete bias testing with [`governance/bias-testing-protocol.md`](governance/bias-testing-protocol.md) if applicable
+3. Score using [`04-evaluation/go-no-go-decision-matrix.md`](04-evaluation/go-no-go-decision-matrix.md)
+4. Document with [`governance/model-card-template.md`](governance/model-card-template.md) if deploying model
+5. Plan next steps with [`04-evaluation/scale-planning-template.md`](04-evaluation/scale-planning-template.md) or [`04-evaluation/lessons-learned-template.md`](04-evaluation/lessons-learned-template.md)
 
 ### Learning from Examples
 

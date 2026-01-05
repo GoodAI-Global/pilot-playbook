@@ -277,6 +277,26 @@ Write a single paragraph that answers:
 
 ---
 
+## See Also
+
+Complete these before or alongside this template:
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`success-criteria-framework.md`](success-criteria-framework.md) | Define MVS/Target/Stretch thresholds | Before filling Success Metrics |
+| [`kill-criteria-examples.md`](kill-criteria-examples.md) | Review stopping condition patterns | Before filling Kill Criteria |
+| [`baseline-measurement-guide.md`](baseline-measurement-guide.md) | Measure current state properly | Before filling Current State Baseline |
+| [`../03-execution/risk-register-template.md`](../03-execution/risk-register-template.md) | Detailed risk tracking | Expand Risks section during pilot |
+| [`../tools/roi-calculator.md`](../tools/roi-calculator.md) | Calculate business case | Before filling Budget section |
+| [`../governance/ai-ethics-checklist.md`](../governance/ai-ethics-checklist.md) | Ethics review | Before Sign-Off |
+
+**Prerequisite Templates:**
+- [`../01-discovery/stakeholder-interview-guide.md`](../01-discovery/stakeholder-interview-guide.md) — Complete interviews first
+- [`../01-discovery/data-audit-checklist.md`](../01-discovery/data-audit-checklist.md) — Verify data readiness
+- [`../01-discovery/ai-readiness-scorecard.md`](../01-discovery/ai-readiness-scorecard.md) — Confirm organization is ready
+
+---
+
 ## Appendices
 
 ### A. Glossary

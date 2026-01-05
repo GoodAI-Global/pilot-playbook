@@ -350,3 +350,16 @@ Before declaring success:
 - [ ] Confounding factors assessed
 - [ ] Results documented
 - [ ] Decision recommendation made
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`baseline-measurement-guide.md`](baseline-measurement-guide.md) | How to measure baseline properly | Before defining thresholds |
+| [`pilot-scope-template.md`](pilot-scope-template.md) | Document criteria in scope | After defining success criteria |
+| [`kill-criteria-examples.md`](kill-criteria-examples.md) | Define failure conditions | Alongside success criteria |
+| [`../03-execution/metrics-tracking-sheet.md`](../03-execution/metrics-tracking-sheet.md) | Track metrics during pilot | During execution phase |
+| [`../04-evaluation/go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Evaluate against criteria | At pilot end |
+| [`../04-evaluation/results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Analyze statistical significance | At pilot end |

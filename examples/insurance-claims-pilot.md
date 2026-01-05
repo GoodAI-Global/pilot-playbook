@@ -435,6 +435,29 @@ While the pilot fell short of the 35% target, it exceeded MVS, demonstrated sign
 
 ---
 
+## Templates Used in This Pilot
+
+This example demonstrates the application of the following playbook templates:
+
+| Phase | Template | How Used |
+|-------|----------|----------|
+| **Discovery** | [`stakeholder-interview-guide.md`](../01-discovery/stakeholder-interview-guide.md) | Interviewed Claims Director, Adjusters, Compliance |
+| **Discovery** | [`data-audit-checklist.md`](../01-discovery/data-audit-checklist.md) | Assessed 2 years claims data, found quality issues |
+| **Discovery** | [`ai-readiness-scorecard.md`](../01-discovery/ai-readiness-scorecard.md) | Scored 6.8/10 (compliance concerns noted) |
+| **Discovery** | [`bottleneck-identification.md`](../01-discovery/bottleneck-identification.md) | Identified simple claims as high-volume bottleneck |
+| **Definition** | [`success-criteria-framework.md`](../02-definition/success-criteria-framework.md) | 25% MVS, 40% Target, 60% Stretch |
+| **Definition** | [`kill-criteria-examples.md`](../02-definition/kill-criteria-examples.md) | Regulatory and accuracy stop conditions |
+| **Definition** | [`baseline-measurement-guide.md`](../02-definition/baseline-measurement-guide.md) | Measured 0% auto-adjudication baseline |
+| **Definition** | [`pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Scoped to simple claims only |
+| **Execution** | [`weekly-review-template.md`](../03-execution/weekly-review-template.md) | Weekly reviews with compliance present |
+| **Execution** | [`metrics-tracking-sheet.md`](../03-execution/metrics-tracking-sheet.md) | Tracked auto-adjudication rate and accuracy |
+| **Execution** | [`stakeholder-update-template.md`](../03-execution/stakeholder-update-template.md) | Bi-weekly compliance updates |
+| **Evaluation** | [`results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Statistical analysis with segment breakdown |
+| **Evaluation** | [`go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Scored 71/100 → CONDITIONAL GO |
+| **Evaluation** | [`lessons-learned-template.md`](../04-evaluation/lessons-learned-template.md) | Documented data quality learnings |
+
+---
+
 ## Key Takeaways for Future Pilots
 
 1. **Hybrid rules + ML** provides explainability regulators need

@@ -426,3 +426,15 @@ For critical pilots:
 6. **Stakeholder review** (1-2 hours)
 7. **Independent verification** (1 day)
 8. **Documented and signed** (2 hours)
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`success-criteria-framework.md`](success-criteria-framework.md) | Define what success looks like | Before or alongside baseline |
+| [`../01-discovery/data-audit-checklist.md`](../01-discovery/data-audit-checklist.md) | Verify data quality first | Before baseline measurement |
+| [`pilot-scope-template.md`](pilot-scope-template.md) | Document baseline in scope | After baseline is measured |
+| [`../03-execution/metrics-tracking-sheet.md`](../03-execution/metrics-tracking-sheet.md) | Track against baseline during pilot | During execution phase |
+| [`../04-evaluation/results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Compare results to baseline | At pilot end |

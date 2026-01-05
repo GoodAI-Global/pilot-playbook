@@ -348,3 +348,16 @@ Escalate to Executive Sponsor immediately if:
 | Budget overrun projected | Request approval or scope change |
 | Critical blocker >1 week unresolved | Request executive intervention |
 | Stakeholder conflict | Request sponsor mediation |
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`metrics-tracking-sheet.md`](metrics-tracking-sheet.md) | Detailed metric tracking | Update before each review |
+| [`risk-register-template.md`](risk-register-template.md) | Track and manage risks | Update Risk section |
+| [`stakeholder-update-template.md`](stakeholder-update-template.md) | Communicate to stakeholders | After weekly review |
+| [`../02-definition/kill-criteria-examples.md`](../02-definition/kill-criteria-examples.md) | Review kill criteria | When monitoring thresholds |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Reference scope and timeline | When assessing progress |
+| [`../04-evaluation/go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Prepare for final decision | As pilot approaches end |

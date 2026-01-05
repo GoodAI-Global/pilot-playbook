@@ -432,6 +432,30 @@ The pilot exceeded the primary detection target, demonstrated massive financial 
 
 ---
 
+## Templates Used in This Pilot
+
+This example demonstrates the application of the following playbook templates:
+
+| Phase | Template | How Used |
+|-------|----------|----------|
+| **Discovery** | [`stakeholder-interview-guide.md`](../01-discovery/stakeholder-interview-guide.md) | Interviewed Site Manager, Veterinarian, Feed Specialists |
+| **Discovery** | [`data-audit-checklist.md`](../01-discovery/data-audit-checklist.md) | Assessed sensor data, video feeds, mortality logs |
+| **Discovery** | [`ai-readiness-scorecard.md`](../01-discovery/ai-readiness-scorecard.md) | Scored 6.5/10 (connectivity challenges) |
+| **Discovery** | [`bottleneck-identification.md`](../01-discovery/bottleneck-identification.md) | Identified early detection as value driver |
+| **Definition** | [`success-criteria-framework.md`](../02-definition/success-criteria-framework.md) | 50% MVS, 65% Target, 80% Stretch detection |
+| **Definition** | [`kill-criteria-examples.md`](../02-definition/kill-criteria-examples.md) | Equipment reliability stop conditions |
+| **Definition** | [`baseline-measurement-guide.md`](../02-definition/baseline-measurement-guide.md) | Measured 30% early detection baseline |
+| **Definition** | [`pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Scoped to 2 pilot sites |
+| **Execution** | [`weekly-review-template.md`](../03-execution/weekly-review-template.md) | Weekly reviews with site managers |
+| **Execution** | [`metrics-tracking-sheet.md`](../03-execution/metrics-tracking-sheet.md) | Tracked detection rate, false positives |
+| **Execution** | [`risk-register-template.md`](../03-execution/risk-register-template.md) | Managed connectivity and equipment risks |
+| **Evaluation** | [`results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Cross-site comparative analysis |
+| **Evaluation** | [`go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Scored 84/100 → GO decision |
+| **Evaluation** | [`scale-planning-template.md`](../04-evaluation/scale-planning-template.md) | Planned 15-site rollout |
+| **Governance** | [`model-card-template.md`](../governance/model-card-template.md) | Documented multi-modal detection model |
+
+---
+
 ## Key Takeaways for Future Pilots
 
 1. **Edge computing enables remote/industrial AI** - Can't always rely on cloud connectivity

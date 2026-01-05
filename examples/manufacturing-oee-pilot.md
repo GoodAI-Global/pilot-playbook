@@ -378,6 +378,29 @@ Improving CNC availability has direct throughput impact.
 
 ---
 
+## Templates Used in This Pilot
+
+This example demonstrates the application of the following playbook templates:
+
+| Phase | Template | How Used |
+|-------|----------|----------|
+| **Discovery** | [`stakeholder-interview-guide.md`](../01-discovery/stakeholder-interview-guide.md) | Interviewed Plant Manager, Maintenance Lead, Operators |
+| **Discovery** | [`data-audit-checklist.md`](../01-discovery/data-audit-checklist.md) | Assessed 3 years of sensor data availability |
+| **Discovery** | [`ai-readiness-scorecard.md`](../01-discovery/ai-readiness-scorecard.md) | Scored 7.2/10 overall readiness |
+| **Discovery** | [`bottleneck-identification.md`](../01-discovery/bottleneck-identification.md) | Identified press machines as constraint |
+| **Definition** | [`success-criteria-framework.md`](../02-definition/success-criteria-framework.md) | Defined MVS/Target/Stretch thresholds |
+| **Definition** | [`kill-criteria-examples.md`](../02-definition/kill-criteria-examples.md) | Set 5 automatic stop conditions |
+| **Definition** | [`baseline-measurement-guide.md`](../02-definition/baseline-measurement-guide.md) | Measured 12.3% baseline downtime |
+| **Definition** | [`pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Complete scope document signed |
+| **Execution** | [`weekly-review-template.md`](../03-execution/weekly-review-template.md) | Weekly reviews Weeks 1-10 |
+| **Execution** | [`metrics-tracking-sheet.md`](../03-execution/metrics-tracking-sheet.md) | Tracked primary/secondary metrics |
+| **Execution** | [`risk-register-template.md`](../03-execution/risk-register-template.md) | Managed 8 identified risks |
+| **Evaluation** | [`results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Statistical analysis of results |
+| **Evaluation** | [`go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Scored 87/100 → GO decision |
+| **Evaluation** | [`scale-planning-template.md`](../04-evaluation/scale-planning-template.md) | Planned Phase 2 rollout |
+
+---
+
 ## Key Takeaways for Future Pilots
 
 1. **Historical data is valuable** - Check for existing sensor data that isn't being used
