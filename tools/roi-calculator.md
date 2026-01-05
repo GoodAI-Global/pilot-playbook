@@ -391,3 +391,15 @@ Confidence Level: High / Medium / Low
 - [ ] Risks identified with mitigations
 - [ ] Executive summary written
 - [ ] Decision deadline specified
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`vendor-evaluation-matrix.md`](vendor-evaluation-matrix.md) | Build vs. buy analysis | Include vendor costs in ROI |
+| [`../01-discovery/bottleneck-identification.md`](../01-discovery/bottleneck-identification.md) | Quantify bottleneck impact | Source for benefit estimates |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Document budget in scope | After ROI calculated |
+| [`../02-definition/success-criteria-framework.md`](../02-definition/success-criteria-framework.md) | Link ROI to success thresholds | Set MVS based on breakeven |
+| [`../04-evaluation/scale-planning-template.md`](../04-evaluation/scale-planning-template.md) | Scale ROI projection | Update ROI for full scale |

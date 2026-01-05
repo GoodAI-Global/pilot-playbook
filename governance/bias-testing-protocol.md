@@ -388,3 +388,15 @@ For detecting a 10% difference in rates with 80% power:
 | 50% | ~200 |
 | 70% | ~300 |
 | 90% | ~400 |
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`ai-ethics-checklist.md`](ai-ethics-checklist.md) | Identify at-risk groups | Before bias testing |
+| [`model-card-template.md`](model-card-template.md) | Document bias findings | Include bias results in model card |
+| [`../04-evaluation/results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Statistical analysis | Combine with results analysis |
+| [`../04-evaluation/go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Include in decision | Bias impacts Organizational Fit score |
+| [`../04-evaluation/scale-planning-template.md`](../04-evaluation/scale-planning-template.md) | Continuous monitoring | Plan bias monitoring at scale |

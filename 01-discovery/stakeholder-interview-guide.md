@@ -353,3 +353,15 @@ After completing interviews, synthesize findings:
 - [ ] Prioritized opportunities
 - [ ] Drafted stakeholder engagement plan
 - [ ] Shared findings with core team
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`data-audit-checklist.md`](data-audit-checklist.md) | Verify data availability | After identifying data needs from interviews |
+| [`ai-readiness-scorecard.md`](ai-readiness-scorecard.md) | Assess organizational readiness | After gathering stakeholder perspectives |
+| [`bottleneck-identification.md`](bottleneck-identification.md) | Confirm the right problem | After understanding stakeholder pain points |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Document pilot scope | After discovery is complete |
+| [`../03-execution/stakeholder-update-template.md`](../03-execution/stakeholder-update-template.md) | Keep stakeholders informed | During pilot execution |

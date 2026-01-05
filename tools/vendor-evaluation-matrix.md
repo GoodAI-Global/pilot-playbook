@@ -372,3 +372,15 @@ Score each question 1-5 (1 = Strongly favors Buy, 5 = Strongly favors Build)
 6. What partnerships do you have?
 7. How often do you release updates?
 8. What's your customer retention rate?
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`roi-calculator.md`](roi-calculator.md) | Calculate total cost of ownership | Include vendor costs in ROI |
+| [`../01-discovery/data-audit-checklist.md`](../01-discovery/data-audit-checklist.md) | Assess data compatibility | Evaluate vendor data requirements |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Document vendor decision | After build vs. buy decided |
+| [`../governance/ai-ethics-checklist.md`](../governance/ai-ethics-checklist.md) | Review vendor ethics | Evaluate vendor AI practices |
+| [`../governance/model-card-template.md`](../governance/model-card-template.md) | Document vendor models | If using vendor ML models |

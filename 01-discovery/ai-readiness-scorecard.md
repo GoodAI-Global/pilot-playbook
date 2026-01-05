@@ -532,3 +532,15 @@ Each dimension scored 1-10:
 **Decision Maker:** [Name]
 **Decision Date:** [YYYY-MM-DD]
 ```
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`stakeholder-interview-guide.md`](stakeholder-interview-guide.md) | Gather stakeholder input | Before scoring Leadership and Culture |
+| [`data-audit-checklist.md`](data-audit-checklist.md) | Assess data readiness | Before scoring Data Infrastructure |
+| [`bottleneck-identification.md`](bottleneck-identification.md) | Validate problem selection | After readiness assessment |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Document pilot scope | If readiness score > 6.0 |
+| [`../governance/ai-ethics-checklist.md`](../governance/ai-ethics-checklist.md) | Ethics review | Score informs Governance & Ethics dimension |

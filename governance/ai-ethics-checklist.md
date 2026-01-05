@@ -325,3 +325,15 @@ For high-stakes decisions:
 | **Periodic review** | Every 6-12 months | Abbreviated checklist + monitoring data |
 | **Triggered review** | Significant change, incident, or complaint | Full checklist |
 | **Sunset review** | Before decommissioning | Data handling and lessons learned |
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`bias-testing-protocol.md`](bias-testing-protocol.md) | Test for fairness | After ethics review identifies risks |
+| [`model-card-template.md`](model-card-template.md) | Document ethical decisions | Document ethics review in model card |
+| [`../01-discovery/ai-readiness-scorecard.md`](../01-discovery/ai-readiness-scorecard.md) | Governance dimension | Informs readiness assessment |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Document ethics in scope | Before pilot sign-off |
+| [`../04-evaluation/go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Ethics in evaluation | Include in Organizational Fit score |

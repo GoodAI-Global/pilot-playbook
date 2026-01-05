@@ -409,3 +409,16 @@ At the end of this analysis, you should have:
 3. **AI suitability assessment** with rationale
 4. **Impact estimate** in business terms
 5. **Recommendation** to proceed or consider alternatives
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`stakeholder-interview-guide.md`](stakeholder-interview-guide.md) | Understand pain points | Before bottleneck analysis |
+| [`data-audit-checklist.md`](data-audit-checklist.md) | Verify data for bottleneck | After identifying bottleneck |
+| [`ai-readiness-scorecard.md`](ai-readiness-scorecard.md) | Confirm readiness to address | After bottleneck confirmed |
+| [`../tools/roi-calculator.md`](../tools/roi-calculator.md) | Calculate impact value | Quantify bottleneck cost |
+| [`../02-definition/pilot-scope-template.md`](../02-definition/pilot-scope-template.md) | Scope the solution | After bottleneck validated |
+| [`../governance/ai-ethics-checklist.md`](../governance/ai-ethics-checklist.md) | Review ethical implications | Before committing to AI approach |

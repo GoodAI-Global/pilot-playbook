@@ -476,3 +476,15 @@ Last Updated: [Date]
 | Default | [X] | Balanced precision/recall |
 | High precision | [X] | Minimize false positives |
 | High recall | [X] | Minimize false negatives |
+
+---
+
+## See Also
+
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [`bias-testing-protocol.md`](bias-testing-protocol.md) | Document bias testing results | Include findings in model card |
+| [`ai-ethics-checklist.md`](ai-ethics-checklist.md) | Ethics review | Reference ethics review in model card |
+| [`../04-evaluation/results-analysis-framework.md`](../04-evaluation/results-analysis-framework.md) | Performance metrics | Source for model card metrics |
+| [`../04-evaluation/go-no-go-decision-matrix.md`](../04-evaluation/go-no-go-decision-matrix.md) | Decision documentation | Reference in model card |
+| [`../04-evaluation/scale-planning-template.md`](../04-evaluation/scale-planning-template.md) | Production deployment | Model card required for scale |
