@@ -25,6 +25,26 @@ A complete, opinionated methodology for running AI pilots in enterprise environm
 - ❌ **Not industry-specific** — Generic framework; adapt to your domain
 - ❌ **Not a guarantee** — Following this won't ensure success, but ignoring it often ensures failure
 
+---
+
+## Table of Contents
+
+- [Quickstart (5 minutes)](#quickstart-5-minutes)
+- [Why Pilots Fail](#why-pilots-fail)
+- [The Operating Loop](#the-operating-loop)
+- [Core Principles](#core-principles)
+- [Using This Playbook](#using-this-playbook)
+  - [The Four Phases](#the-four-phases)
+  - [Quick Start](#quick-start)
+  - [Learning from Examples](#learning-from-examples)
+- [Directory Structure](#directory-structure)
+- [The Pilot Checklist](#the-pilot-checklist)
+- [When to Kill a Pilot](#when-to-kill-a-pilot)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
 ## Quickstart (5 minutes)
 
 ```bash

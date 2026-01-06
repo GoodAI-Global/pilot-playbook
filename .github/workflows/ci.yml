@@ -27,9 +27,7 @@ jobs:
           markdownlint '**/*.md' \
             --ignore node_modules \
             --ignore .github \
-            --config .markdownlint.json || true
-        # Note: Using || true to not fail on style warnings
-        # Remove || true once all style issues are resolved
+            --config .markdownlint.json
 
   links:
     name: Check Links
