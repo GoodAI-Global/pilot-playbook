@@ -1,0 +1,40 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Build outputs
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Local notes (not for commit)
+notes/
+drafts/
+*.local.md
+
+# Node.js (for markdownlint)
+node_modules/
+package-lock.json
+package.json
+
+# Test outputs
+.test-results
+*.log
