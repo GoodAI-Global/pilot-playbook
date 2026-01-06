@@ -12,14 +12,16 @@ This repository contains **documentation templates only** — no executable code
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1.x   | :white_check_mark: |
+| 1.1.x   | :white_check_mark: |
+| 1.0.x   | :white_check_mark: |
+| 0.1.x   | :x:                |
 
 ## Reporting a Vulnerability
 
 If you discover a security issue:
 
 1. **Do NOT open a public issue**
-2. Email the maintainer directly at rogermsc@gmail.com
+2. Email security@wearegoodai.com
 3. Include:
    - Description of the issue
    - Steps to reproduce (if applicable)
@@ -27,6 +29,7 @@ If you discover a security issue:
    - Potential impact
 
 **Response timeline:**
+
 - Acknowledgment: Within 48 hours
 - Initial assessment: Within 7 days
 - Resolution: Depends on severity

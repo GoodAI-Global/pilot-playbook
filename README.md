@@ -1,229 +1,68 @@
-# The AI Pilot Playbook
+# Enterprise AI Pilot Playbook
 
-[![CI](https://github.com/rogermsc/pilot-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/rogermsc/pilot-playbook/actions/workflows/ci.yml)
+[![CI](https://github.com/GoodAI-Global/pilot-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/GoodAI-Global/pilot-playbook/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**A practical framework for running enterprise AI pilots that actually deliver results.**
+> A structured methodology for running enterprise AI pilots that deliver measurable results, not just demos.
 
-*By rogermsc*
-
----
-
-## What This Is
-
-A complete, opinionated methodology for running AI pilots in enterprise environments. Includes:
-
-- **26 ready-to-use templates** across Discovery, Definition, Execution, and Evaluation phases
-- **3 worked examples** (Manufacturing, Insurance, Aquaculture) showing the methodology in action
-- **Governance tools** for ethics, bias testing, and model documentation
-- **Business case tools** for ROI calculation and vendor evaluation
-
-## What This Is NOT
-
-- ❌ **Not a technical ML guide** — No model training, hyperparameter tuning, or MLOps
-- ❌ **Not production code** — Templates are markdown documentation, not software
-- ❌ **Not industry-specific** — Generic framework; adapt to your domain
-- ❌ **Not a guarantee** — Following this won't ensure success, but ignoring it often ensures failure
+**Why most AI pilots fail:** Vague objectives, no baseline metrics, scope creep, and no kill criteria. This playbook prevents those failures.
 
 ---
 
 ## Table of Contents
 
-- [Quickstart (5 minutes)](#quickstart-5-minutes)
-- [Why Pilots Fail](#why-pilots-fail)
-- [The Operating Loop](#the-operating-loop)
-- [Core Principles](#core-principles)
-- [Using This Playbook](#using-this-playbook)
-  - [The Four Phases](#the-four-phases)
-  - [Quick Start](#quick-start)
-  - [Learning from Examples](#learning-from-examples)
+- [The Framework](#the-framework)
+- [Quick Start](#quick-start)
+- [When to Use This](#when-to-use-this)
 - [Directory Structure](#directory-structure)
-- [The Pilot Checklist](#the-pilot-checklist)
-- [When to Kill a Pilot](#when-to-kill-a-pilot)
+- [Core Principles](#core-principles)
+- [Templates](#templates)
+- [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
 
 ---
 
-## Quickstart (5 minutes)
-
-```bash
-# Clone the repository
-git clone https://github.com/rogermsc/pilot-playbook.git
-cd pilot-playbook
-
-# Start with the three essential templates:
-# 1. Assess readiness
-open 01-discovery/ai-readiness-scorecard.md
-
-# 2. Define scope with kill criteria
-open 02-definition/pilot-scope-template.md
-
-# 3. Track weekly
-open 03-execution/weekly-review-template.md
-```
-
-**Minimum viable pilot setup:**
-1. Score your readiness → `01-discovery/ai-readiness-scorecard.md` (need >6.0 to proceed)
-2. Define ONE primary metric, baseline it, set MVS/Target/Stretch thresholds
-3. Set 3-5 kill criteria that trigger automatic stop
-4. Run weekly reviews for max 12 weeks
-5. Make Go/No-Go decision with `04-evaluation/go-no-go-decision-matrix.md`
-
----
-
-## Why Pilots Fail
-
-Most AI pilots fail not because the technology doesn't work, but because organizations don't know how to run them properly.
-
-**The failure patterns are predictable:**
-
-1. **Vague objectives.** "Let's try AI on customer service" is not a pilot—it's an experiment without a hypothesis. Without specific, measurable success criteria, you cannot fail or succeed. You just... stop.
-
-2. **No kill criteria.** Organizations struggle to stop failing pilots because they never defined what failure looks like. Sunk cost fallacy kicks in. Resources drain. Hope becomes the strategy.
-
-3. **Wrong problem.** AI gets applied to the easiest problem to automate, not the most impactful problem to solve. The pilot "succeeds" but nobody cares because it didn't address what matters.
-
-4. **No baseline.** You cannot prove improvement if you never measured the starting point. "It feels faster" is not evidence. "We reduced processing time from 12 days to 4 days" is.
-
-5. **Scope creep.** The pilot grows from "automate invoice processing" to "transform the entire finance function" without anyone noticing until it's too late.
-
-6. **Stakeholder misalignment.** Different people want different things. Without explicit agreement on success criteria, the pilot is evaluated against shifting expectations.
-
-7. **Measuring the wrong things.** Model accuracy is not business value. A 95% accurate model that nobody uses is worthless. A 85% accurate model that saves $1M per year is a success.
-
-**This playbook exists to prevent these failures.**
-
----
-
-## The Operating Loop
-
-We run pilots using a disciplined operating loop that maximizes learning while minimizing waste:
+## The Framework
 
 ```
-┌────────────────────────────────────────────────────────────┐
-│                                                            │
-│    ┌──────────┐     ┌──────────┐     ┌──────────────┐     │
-│    │ IDENTIFY │────▶│  PILOT   │────▶│  INSTRUMENT  │     │
-│    └──────────┘     └──────────┘     └──────────────┘     │
-│          ▲                                   │             │
-│          │                                   ▼             │
-│    ┌──────────────┐                  ┌──────────┐         │
-│    │ SCALE/SUNSET │◀─────────────────│  LEARN   │         │
-│    └──────────────┘                  └──────────┘         │
-│                                                            │
-└────────────────────────────────────────────────────────────┘
+Identify → Pilot → Instrument → Learn → Scale/Sunset
 ```
 
-### Identify
-
-Find the real bottleneck. Not the easy problem, not the interesting problem—the *impactful* problem. Use data to validate that solving this problem matters.
-
-### Pilot
-
-Run a time-boxed experiment with clear success criteria. Ship the smallest useful thing. Measure what happens. Maximum 12 weeks—if you can't prove value in 12 weeks, you're not ready.
-
-### Instrument
-
-Measure everything that matters. Build the evidence base. Create the data that will inform the decision.
-
-### Learn
-
-Analyze results honestly. What worked? What didn't? What surprised you? Document for the organization, not just the team.
-
-### Scale or Sunset
-
-Make the decision. If it works, scale it. If it doesn't, stop it. Both are valid outcomes. What's not valid is continuing without deciding.
+| Phase | Purpose | Duration |
+|-------|---------|----------|
+| **01-Discovery** | Find the right problem | 1-2 weeks |
+| **02-Definition** | Define success/failure criteria | 1 week |
+| **03-Execution** | Build and run the pilot | 2-8 weeks |
+| **04-Evaluation** | Decide: scale, iterate, or kill | 1 week |
 
 ---
 
-## Core Principles
+## Quick Start
 
-### Ship Small, Learn Fast
-
-> Release the smallest useful thing, measure what happens, iterate based on evidence.
-
-Don't build the complete solution. Build enough to test the hypothesis. A pilot that proves the approach in 6 weeks beats a comprehensive solution that takes 6 months.
-
-### Evidence Over Opinions
-
-> Decisions come from production data, not slideware.
-
-HiPPOs (Highest Paid Person's Opinions) don't run our pilots. Data does. If there's no data, get data. If you can't get data, you're not ready for a pilot.
-
-### Kill Criteria Are Mandatory
-
-> Every pilot must define what failure looks like before starting.
-
-If you can't articulate how the pilot fails, you don't understand it well enough to run it. Kill criteria protect resources and force intellectual honesty.
-
-### The One Number
-
-> Every pilot has exactly one primary metric.
-
-Multiple "primary" metrics create confusion and enable cherry-picking. Pick the ONE number that determines success. Everything else is supporting evidence.
-
-### Baseline Before Build
-
-> You cannot prove improvement without proving the starting point.
-
-Measure the current state before changing anything. This is non-negotiable. No baseline, no pilot.
+1. **Identify a candidate problem** using the [AI Readiness Scorecard](01-discovery/ai-readiness-scorecard.md)
+2. **Define success criteria** with the [Pilot Scope Template](02-definition/pilot-scope-template.md)
+3. **Set your baseline** using the [Baseline Measurement Guide](02-definition/baseline-measurement-guide.md)
+4. **Run the pilot** with [Weekly Reviews](03-execution/weekly-review-template.md)
+5. **Measure** against your defined criteria
+6. **Decide** using the [Go/No-Go Decision Matrix](04-evaluation/go-no-go-decision-matrix.md)
 
 ---
 
-## Using This Playbook
+## When to Use This
 
-### The Four Phases
+✅ **Use this playbook when:**
 
-This playbook follows four phases that mirror the pilot lifecycle:
+- Starting your first AI initiative
+- Previous AI projects failed to deliver ROI
+- Leadership wants AI but doesn't know where to start
+- You need to prove value before larger investment
 
-| Phase | Focus | When You're Done |
-|-------|-------|------------------|
-| **01-Discovery** | Understand the problem and readiness | Problem validated, organization ready |
-| **02-Definition** | Define scope, success, and kill criteria | Scope document signed, baseline measured |
-| **03-Execution** | Run the pilot with discipline | Pilot complete, data collected |
-| **04-Evaluation** | Analyze results and decide | Go/No-Go decision made |
+❌ **Don't use this for:**
 
-### Quick Start
-
-**If you're starting a new pilot:**
-
-1. Begin with [`01-discovery/stakeholder-interview-guide.md`](01-discovery/stakeholder-interview-guide.md) to understand the problem
-2. Run [`01-discovery/data-audit-checklist.md`](01-discovery/data-audit-checklist.md) to verify data readiness
-3. Complete [`01-discovery/ai-readiness-scorecard.md`](01-discovery/ai-readiness-scorecard.md) to assess organizational readiness
-4. Use [`01-discovery/bottleneck-identification.md`](01-discovery/bottleneck-identification.md) to confirm you're solving the right problem
-5. Calculate business case with [`tools/roi-calculator.md`](tools/roi-calculator.md)
-6. Evaluate build vs. buy with [`tools/vendor-evaluation-matrix.md`](tools/vendor-evaluation-matrix.md)
-7. Complete ethics review with [`governance/ai-ethics-checklist.md`](governance/ai-ethics-checklist.md)
-8. Define success metrics with [`02-definition/success-criteria-framework.md`](02-definition/success-criteria-framework.md)
-9. Establish kill criteria with [`02-definition/kill-criteria-examples.md`](02-definition/kill-criteria-examples.md)
-10. Measure baseline using [`02-definition/baseline-measurement-guide.md`](02-definition/baseline-measurement-guide.md)
-11. Fill out [`02-definition/pilot-scope-template.md`](02-definition/pilot-scope-template.md) completely before starting
-
-**If you're running an active pilot:**
-
-1. Use [`03-execution/weekly-review-template.md`](03-execution/weekly-review-template.md) every week
-2. Track metrics with [`03-execution/metrics-tracking-sheet.md`](03-execution/metrics-tracking-sheet.md)
-3. Manage risks with [`03-execution/risk-register-template.md`](03-execution/risk-register-template.md)
-4. Communicate progress with [`03-execution/stakeholder-update-template.md`](03-execution/stakeholder-update-template.md)
-
-**If you're deciding on a pilot:**
-
-1. Follow [`04-evaluation/results-analysis-framework.md`](04-evaluation/results-analysis-framework.md) for rigorous analysis
-2. Complete bias testing with [`governance/bias-testing-protocol.md`](governance/bias-testing-protocol.md) if applicable
-3. Score using [`04-evaluation/go-no-go-decision-matrix.md`](04-evaluation/go-no-go-decision-matrix.md)
-4. Document with [`governance/model-card-template.md`](governance/model-card-template.md) if deploying model
-5. Plan next steps with [`04-evaluation/scale-planning-template.md`](04-evaluation/scale-planning-template.md) or [`04-evaluation/lessons-learned-template.md`](04-evaluation/lessons-learned-template.md)
-
-### Learning from Examples
-
-The [`examples/`](examples/) directory contains complete worked examples:
-
-| Example | Industry | Outcome | Key Learnings |
-|---------|----------|---------|---------------|
-| [Manufacturing OEE Pilot](examples/manufacturing-oee-pilot.md) | Manufacturing | GO | Historical data value, shadow mode testing |
-| [Insurance Claims Pilot](examples/insurance-claims-pilot.md) | Insurance | CONDITIONAL GO | Rules+ML hybrid, data quality limits |
-| [Aquaculture Monitoring Pilot](examples/aquaculture-monitoring-pilot.md) | Agriculture | GO | Edge computing, multi-modal fusion |
+- Mature AI programs with established processes
+- Pure research/experimentation with no business case
+- Projects where success criteria can't be measured
 
 ---
 
@@ -231,139 +70,145 @@ The [`examples/`](examples/) directory contains complete worked examples:
 
 ```
 pilot-playbook/
+├── 01-discovery/                    # Understand the problem
+│   ├── stakeholder-interview-guide.md
+│   ├── data-audit-checklist.md
+│   ├── ai-readiness-scorecard.md
+│   └── bottleneck-identification.md
 │
-├── README.md                          # This file
-├── LICENSE                            # CC-BY-4.0
-├── CONTRIBUTING.md                    # How to contribute
-├── .gitignore                         # Git ignore rules
+├── 02-definition/                   # Define the pilot
+│   ├── pilot-scope-template.md
+│   ├── success-criteria-framework.md
+│   ├── kill-criteria-examples.md
+│   └── baseline-measurement-guide.md
 │
-├── 01-discovery/                      # Understand the problem
-│   ├── stakeholder-interview-guide.md # How to interview stakeholders
-│   ├── data-audit-checklist.md        # How to assess data readiness
-│   ├── ai-readiness-scorecard.md      # 10-dimension readiness assessment
-│   └── bottleneck-identification.md   # Find the right problem to solve
+├── 03-execution/                    # Run the pilot
+│   ├── weekly-review-template.md
+│   ├── metrics-tracking-sheet.md
+│   ├── stakeholder-update-template.md
+│   └── risk-register-template.md
 │
-├── 02-definition/                     # Define the pilot
-│   ├── pilot-scope-template.md        # Complete scope document
-│   ├── success-criteria-framework.md  # Define what success looks like
-│   ├── kill-criteria-examples.md      # When to stop
-│   └── baseline-measurement-guide.md  # Measure before you start
+├── 04-evaluation/                   # Decide on results
+│   ├── results-analysis-framework.md
+│   ├── go-no-go-decision-matrix.md
+│   ├── scale-planning-template.md
+│   └── lessons-learned-template.md
 │
-├── 03-execution/                      # Run the pilot
-│   ├── weekly-review-template.md      # Weekly review structure
-│   ├── metrics-tracking-sheet.md      # Track metrics consistently
-│   ├── stakeholder-update-template.md # Keep stakeholders informed
-│   └── risk-register-template.md      # Manage risks actively
+├── tools/                           # Business case tools
+│   ├── roi-calculator.md
+│   └── vendor-evaluation-matrix.md
 │
-├── 04-evaluation/                     # Decide on results
-│   ├── results-analysis-framework.md  # Analyze results rigorously
-│   ├── go-no-go-decision-matrix.md    # Make the decision
-│   ├── scale-planning-template.md     # Plan for scale
-│   └── lessons-learned-template.md    # Capture knowledge
+├── governance/                      # Responsible AI
+│   ├── ai-ethics-checklist.md
+│   ├── model-card-template.md
+│   └── bias-testing-protocol.md
 │
-├── tools/                             # Business case tools
-│   ├── roi-calculator.md              # ROI and TCO calculations
-│   └── vendor-evaluation-matrix.md    # Build vs. buy decision framework
-│
-├── governance/                        # Responsible AI governance
-│   ├── ai-ethics-checklist.md         # Pre-deployment ethics review
-│   ├── model-card-template.md         # ML model documentation standard
-│   └── bias-testing-protocol.md       # Systematic bias testing
-│
-└── examples/                          # Worked examples
-    ├── manufacturing-oee-pilot.md     # Complete OEE pilot example
-    ├── insurance-claims-pilot.md      # Complete claims pilot example
-    └── aquaculture-monitoring-pilot.md # Complete monitoring pilot example
+└── examples/                        # Complete worked examples
+    ├── manufacturing-oee-pilot.md
+    ├── insurance-claims-pilot.md
+    └── aquaculture-monitoring-pilot.md
 ```
 
 ---
 
-## The Pilot Checklist
+## Core Principles
 
-Use this checklist to ensure you don't skip critical steps:
+### 1. Measurable Problems Only
 
-### Before You Start
+If you can't measure current state, you can't prove improvement. No baseline = no pilot.
 
-- [ ] Problem is specific and measurable
-- [ ] Stakeholders interviewed
-- [ ] AI readiness assessed (score >6.0)
-- [ ] Bottleneck confirmed with data
-- [ ] Data audit complete
-- [ ] ROI business case calculated
-- [ ] Build vs. buy decision made
-- [ ] Pilot scope document complete and signed
-- [ ] Success criteria defined with thresholds (MVS, Target, Stretch)
-- [ ] Kill criteria defined
-- [ ] Baseline measured and documented
-- [ ] Ethics checklist completed
-- [ ] Resources committed
-- [ ] Timeline set (max 12 weeks)
+### 2. Kill Criteria Upfront
 
-### During the Pilot
+Define what failure looks like before you start. If you hit kill criteria, stop. This isn't failure—it's learning.
 
-- [ ] Weekly reviews happening
-- [ ] Metrics tracked consistently
-- [ ] Kill criteria monitored
-- [ ] Risks managed
-- [ ] Stakeholders updated
-- [ ] Issues escalated promptly
+### 3. Smallest Useful Thing
 
-### At Pilot End
+Don't build a platform. Build the smallest thing that could prove the hypothesis. Then measure.
 
-- [ ] Results analyzed rigorously
-- [ ] Statistical significance tested
-- [ ] Bias testing completed (if applicable)
-- [ ] Model card documented (if deploying model)
-- [ ] Go/No-Go matrix completed
-- [ ] Decision made and documented
-- [ ] Lessons learned captured
-- [ ] Knowledge shared
+### 4. Evidence Over Opinions
+
+Decisions come from data, not stakeholder enthusiasm. Weekly reviews use metrics, not feelings.
+
+### 5. Human Uplift Required
+
+Every pilot must answer: who gets faster/safer, and what new capability appears? If only machines benefit, reconsider.
 
 ---
 
-## When to Kill a Pilot
+## Templates
 
-Killing a pilot is not failure—it's smart resource allocation. Kill a pilot when:
-
-| Signal | Action |
-|--------|--------|
-| **Data quality unsalvageable** | Stop. No algorithm can overcome garbage data. |
-| **Technical approach hits ceiling** | Pivot or stop. More effort won't help. |
-| **Stakeholder support evaporates** | Stop. Technology without organizational support fails. |
-| **ROI doesn't close** | Stop. Value must exceed cost. |
-| **Timeline exceeded 2x** | Stop or radically re-scope. |
-| **Kill criteria triggered** | Stop immediately and review. |
-
-**Remember:** A fast failure is cheaper than a slow one. Every week spent on a doomed pilot is a week not spent on something that could succeed.
+| Template | Purpose | When to Use |
+|----------|---------|-------------|
+| [AI Readiness Scorecard](01-discovery/ai-readiness-scorecard.md) | Assess organizational readiness | Discovery phase |
+| [Pilot Scope Template](02-definition/pilot-scope-template.md) | Document scope, success, kill criteria | Definition phase |
+| [Weekly Review](03-execution/weekly-review-template.md) | Structured progress check | During execution |
+| [Go/No-Go Matrix](04-evaluation/go-no-go-decision-matrix.md) | Scale/sunset decision framework | Evaluation phase |
 
 ---
 
-## About
+## Examples
 
-This playbook represents a methodology for running enterprise AI pilots that actually deliver results.
+### Manufacturing
 
-**Core principles:**
-- Deliver outcomes, not just technology
-- Prioritize evidence over opinions
-- Know when to stop as well as when to start
-- Build organizational capability, not just models
+- **Problem:** Unplanned downtime costing $2.8M annually
+- **Pilot:** Predictive maintenance on 3 CNC machines
+- **Metric:** Unplanned downtime hours/month
+- **Result:** 34% reduction, $541K annual savings projected
+- **Decision:** GO - scaling to all 12 machines
+- [See full case study](examples/manufacturing-oee-pilot.md)
 
-**This is how we run pilots, and now it's how you can too.**
+### Insurance
 
----
+- **Problem:** Claims processing takes 14+ days
+- **Pilot:** Document extraction automation
+- **Metric:** Processing time, accuracy rate
+- **Result:** 67% time reduction with 94% accuracy
+- **Decision:** CONDITIONAL GO - hybrid rules+ML approach
+- [See full case study](examples/insurance-claims-pilot.md)
 
-## License
+### Aquaculture
 
-This work is licensed under [CC-BY-4.0](LICENSE). You are free to share and adapt this material for any purpose, including commercial use, provided you give appropriate credit.
+- **Problem:** Fish mortality from undetected water quality issues
+- **Pilot:** Real-time monitoring with edge AI
+- **Metric:** Early detection rate, false alarm rate
+- **Result:** 89% early detection, mortality reduced 45%
+- **Decision:** GO - expanding to additional sites
+- [See full case study](examples/aquaculture-monitoring-pilot.md)
 
 ---
 
 ## Contributing
 
-This playbook improves with use. If you have suggestions, corrections, or additions based on your experience running pilots, we welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions that improve this methodology. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+**Especially valuable:**
+
+- Additional industry examples (healthcare, retail, logistics)
+- Improved templates based on real-world usage
+- Translations
 
 ---
 
-*"The goal of a pilot is not to prove that AI works. It's to prove that AI works for this problem, for this organization, with acceptable cost and risk. Everything else is theater."*
+## License
 
-— rogermsc
+This playbook is licensed under [CC BY 4.0](LICENSE). You may use, modify, and share with attribution.
+
+Attribution: "Enterprise AI Pilot Playbook by Good AI (https://wearegoodai.com)"
+
+---
+
+## About Good AI
+
+We solve what slows you down. This playbook represents our methodology for enterprise AI implementations—tested across manufacturing, insurance, healthcare, and financial services.
+
+**Need help running a pilot?** [Contact us](mailto:contact@wearegoodai.com)
+
+---
+
+<div align="center">
+
+**Good AI** — Production-ready AI implementations for enterprises.
+
+[Website](https://wearegoodai.com) · [GitHub](https://github.com/GoodAI-Global) · [Contact](mailto:contact@wearegoodai.com)
+
+</div>
