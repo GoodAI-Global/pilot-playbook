@@ -1,8 +1,54 @@
 # The AI Pilot Playbook
 
+[![CI](https://github.com/rogermsc/pilot-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/rogermsc/pilot-playbook/actions/workflows/ci.yml)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **A practical framework for running enterprise AI pilots that actually deliver results.**
 
 *By rogermsc*
+
+---
+
+## What This Is
+
+A complete, opinionated methodology for running AI pilots in enterprise environments. Includes:
+
+- **26 ready-to-use templates** across Discovery, Definition, Execution, and Evaluation phases
+- **3 worked examples** (Manufacturing, Insurance, Aquaculture) showing the methodology in action
+- **Governance tools** for ethics, bias testing, and model documentation
+- **Business case tools** for ROI calculation and vendor evaluation
+
+## What This Is NOT
+
+- ❌ **Not a technical ML guide** — No model training, hyperparameter tuning, or MLOps
+- ❌ **Not production code** — Templates are markdown documentation, not software
+- ❌ **Not industry-specific** — Generic framework; adapt to your domain
+- ❌ **Not a guarantee** — Following this won't ensure success, but ignoring it often ensures failure
+
+## Quickstart (5 minutes)
+
+```bash
+# Clone the repository
+git clone https://github.com/rogermsc/pilot-playbook.git
+cd pilot-playbook
+
+# Start with the three essential templates:
+# 1. Assess readiness
+open 01-discovery/ai-readiness-scorecard.md
+
+# 2. Define scope with kill criteria
+open 02-definition/pilot-scope-template.md
+
+# 3. Track weekly
+open 03-execution/weekly-review-template.md
+```
+
+**Minimum viable pilot setup:**
+1. Score your readiness → `01-discovery/ai-readiness-scorecard.md` (need >6.0 to proceed)
+2. Define ONE primary metric, baseline it, set MVS/Target/Stretch thresholds
+3. Set 3-5 kill criteria that trigger automatic stop
+4. Run weekly reviews for max 12 weeks
+5. Make Go/No-Go decision with `04-evaluation/go-no-go-decision-matrix.md`
 
 ---
 

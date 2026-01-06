@@ -29,3 +29,12 @@ _site/
 notes/
 drafts/
 *.local.md
+
+# Node.js (for markdownlint)
+node_modules/
+package-lock.json
+package.json
+
+# Test outputs
+.test-results
+*.log

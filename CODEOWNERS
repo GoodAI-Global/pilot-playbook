@@ -1,0 +1,23 @@
+# CODEOWNERS - Define code ownership for review requirements
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repository
+* @rogermsc
+
+# Core methodology templates require owner review
+/01-discovery/ @rogermsc
+/02-definition/ @rogermsc
+/03-execution/ @rogermsc
+/04-evaluation/ @rogermsc
+
+# Governance and tools require owner review
+/governance/ @rogermsc
+/tools/ @rogermsc
+
+# Examples can have community contributions with owner approval
+/examples/ @rogermsc
+
+# Root documentation requires owner review
+README.md @rogermsc
+CONTRIBUTING.md @rogermsc
+SECURITY.md @rogermsc
